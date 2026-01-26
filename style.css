@@ -6,47 +6,96 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #74ebd5, #9face6);
 }
 
+/* Main App */
 .app {
-  background: white;
-  padding: 25px;
-  width: 300px;
+  background: #ffffff;
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 12px;
   text-align: center;
-  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-h1 {
-  margin-bottom: 15px;
+/* Heading */
+.app h1 {
+  margin-bottom: 20px;
 }
 
+/* Search Section */
 .search {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
 .search input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 .search button {
-  padding: 8px 12px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
+  background: #4a6cf7;
+  color: white;
+}
+
+/* Weather Info */
+.weather h2 {
+  margin-bottom: 10px;
 }
 
 .temp {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: bold;
+  margin: 10px 0;
 }
 
 .details {
-  margin-top: 10px;
-  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+
+  .search {
+    flex-direction: column;
+  }
+
+  .search button {
+    width: 100%;
+  }
+
+  .temp {
+    font-size: 34px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.logo {
+  font-size: 32px;
+  margin-right: 6px;
+}
+
+.app h1 {
+  color: #333;
 }
