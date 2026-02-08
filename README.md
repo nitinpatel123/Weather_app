@@ -14,9 +14,5 @@ Get the current weather information for any city around the world instantly.
 
 ---
 
-## How to Run
-
-1. Clone this repository:
-
- ```bash
- git clone https://github.com/nitinpatel123/Weather_app.git
+## live link
+  👉 (https://vercel.com/nitin-patels-projects-2cd24d4a?repo=https://github.com/nitinpatel123/Weather_app)
